@@ -6,9 +6,9 @@ let reset = document.querySelector('.resetCTA');
 
 let startCount = 0;
 
-// if(startCount==0){
-//     reset.style.display='none';
-// }
+if(startCount==0){
+    reset.style.display='none';
+}
 
 
 
@@ -16,6 +16,15 @@ let startCount = 0;
 function posTap() {
     startCount = startCount + 1;
     count.textContent = startCount;
+    if(startCount!=0){
+     reset.style.display = 'block';
+     reset.addEventListener('click',function(){
+        if(startCount==0){
+            reset.style.display='none';
+        }
+     })
+    }
+
 }
 
 positive.addEventListener('click', posTap);
@@ -24,6 +33,14 @@ positive.addEventListener('click', posTap);
 function negTap() {
     startCount = startCount - 1;
     count.textContent = startCount;
+    if(startCount!=0){
+        reset.style.display = 'block';
+        reset.addEventListener('click',function(){
+           if(startCount==0){
+               reset.style.display='none';
+           }
+        })
+       }
 }
 
 negative.addEventListener('click', negTap);
