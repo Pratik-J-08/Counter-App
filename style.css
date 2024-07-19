@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    width: 100wv;
+    height: 100wh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #121212;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 28px;
+}
+
+.heading {
+    color: #f1ecff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+button {
+    background-color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.controls {
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    min-width: 200px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.count {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+
+}
+
+.resetCTA {
+    background-color: #512bc4;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.positive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.negative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetCTA:hover {
+    background-color: #2f1381;
+}
+
+.positive:hover {
+    background-color: #003116;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.negative:hover {
+    background-color: #3a0000;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
